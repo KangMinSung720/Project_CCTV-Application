@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.EyeU">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/eyeu"
+        android:label="EYE U"
+        android:roundIcon="@mipmap/eyeu"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name="com.example.EyeU.intro_screen">
+    <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+
+        <category android:name="android.intent.category.LAUNCHER" />
+    </intent-filter>
+</activity>
+    <activity android:name="com.example.EyeU.login_screen" />
+    <activity android:name="com.example.EyeU.main_screen" />
+    <activity android:name="com.example.EyeU.live_screen" />
+    <activity android:name="com.example.EyeU.record_screen" />
+    <activity android:name="com.example.EyeU.membership_lookup" />
+    <activity android:name="com.example.EyeU.membership_lookup2" />
+    <activity android:name="com.example.EyeU.membership_screen" />
+    <activity android:name="com.example.EyeU.membership_input" />
+    <provider
+        android:authorities="com.example.EyeU.fileProvider"
+        android:name="androidx.core.content.FileProvider"
+        android:exported="false"
+        android:grantUriPermissions="true">
+        <meta-data
+            android:name="android.support.FILE_PROVIDER_PATHS"
+            android:resource="@xml/file_path"/>
+    </provider>
+</application>
+
+</manifest>

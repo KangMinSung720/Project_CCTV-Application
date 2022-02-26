@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".live_screen">
+
+    <FrameLayout
+        android:id="@+id/streamFrame"
+        android:layout_width="match_parent"
+        android:layout_height="678dp">
+
+        <WebView
+            android:id="@+id/StreamScreen"
+            android:layout_width="match_parent"
+            android:layout_height="678dp">
+
+        </WebView>
+
+        <Button
+            android:id="@+id/fullscreen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:gravity="center"
+            android:fontFamily="@font/bamin"
+            android:text="전체화면" />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="#FAF0EA"
+        android:ems="10"
+        android:fontFamily="@font/bamin"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:text="전체보기는 영상 오른쪽 하단을 눌러주세요."
+        android:textColor="@android:color/black" />
+
+
+</LinearLayout>
